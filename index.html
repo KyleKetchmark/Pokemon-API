@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
+    <title>API 1</title>
+</head>
+
+<body>
+    <!-- Main page Title-->
+    <header id="heading">
+        <h1>Welcome PokeLovers! </h1>
+    </header>
+    <!-- Search Form Div-->
+    <div id="search-form">
+        <h3>Search for a Pokemon's Abilities & Moves :)</h3>
+        <form>
+            <p>
+                <label for="">Enter Pokemon Name:</label>
+                <input type="text" name="get-pokemon" id="search"><br>
+            </p>
+            <p>
+                <button id="submit">Submit</button>
+            </p>
+        </form>
+    </div>
+    <!-- Return Section-->
+    <div class="wrapper">
+        <section class="returned" id="abil-return">
+            <ul id="abils" class="data"></ul>
+        </section>
+        <br>
+        <section class="returned" id="move-return">
+            <ul id="moves" class="data"></ul>
+        </section>
+    </div>
+    <script src="api.js"></script>
+</body>
+
+</html>
