@@ -2,15 +2,21 @@ body {
     color: whitesmoke;
     background-position: no-repeat;
     background-image: url(https://live.staticflickr.com/5763/20825075904_4d1195a82c_b.jpg);
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: space-evenly;
 }
 
 header {
+    width: 90%;
+    margin: 10vh;
+    padding: 1%;
     text-align: center;
     font-family: Luminari, fantasy;
-    padding: 1px;
     background-color: #ff2e2ef3;
     color: whitesmoke;
-    margin: 17vh;
     border: whitesmoke;
     border-radius: 52px;
     text-shadow: white;
@@ -18,44 +24,70 @@ header {
 }
 
 #search-form {
+    margin: 5%;
+    padding: 10%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.719);
     color: whitesmoke;
     border: whitesmoke;
-    border-radius: 70px;
-    padding: 1vh;
-    margin: 5vh;
+    border-radius: 22%;
     text-shadow: whitesmoke;
     font-weight: 100;
 }
 
 #submit {
+    width: 100px;
+    padding: 8px;
+    margin-top: 5px;
     background-color: whitesmoke;
     text-align: center;
-    padding: 8px;
-    width: 100px;
-    margin-top: 5px;
     border-radius: 11px;
     border-width: 5px;
     border: rgba(0, 0, 0, 0.650);
     font-weight: 550;
 }
 
-.wrapper {
+#pokeDisplay {
+    background-color: #f0e68c;
+    opacity: 98%;
+    border: 2px solid black;
+    border-radius: 5%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#topDisplay {
+    display: flex;
+    flex-direction: column;
     align-content: center;
-    flex-wrap: nowrap;
+    align-items: center;
+    color: black;
+}
+
+#bottomDisplay {
+    margin: 5%;
+    padding: 5%;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.returned, h3 {
+    text-align: center;
 }
 
 .returned {
-    padding: 28px;
-    margin: 5px;
+    margin: 3%;
+    padding: 8%;
     color: black;
     background-color: rgba(245, 245, 245, 0.863);
     border-radius: 5px;
+    text-align: left;
 }
 
 
